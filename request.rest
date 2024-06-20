@@ -1,0 +1,44 @@
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJBbGZhcml6aSBIaWRheWFoIiwiZW1haWwiOiJhbGZhcml6aUBnbWFpbC5jb20iLCJpYXQiOjE3MTg4MDgyOTYsImV4cCI6MTcxODgwODMxNn0.jGpTE2Dd8Ev-P__QjNIhGqqWdhVVc_i-MYoavoOok98
+
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "M Dzaki P",
+    "email": "dzakiPras@gmail.com",
+    "password": "12345678",
+    "confPass": "12345678"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "alfarizi@gmail.com",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:3000/token
+
+###
+DELETE http://localhost:3000/logout
+
+###
+GET http://localhost:3000/kamus
+
+###
+GET http://localhost:3000/kamus/1
+
+###
+POST http://localhost:3000/kamus
+Content-Type: application/json
+
+{
+    "gambar": "gambar2",
+    "keterangan": "huruf B"
+}
